@@ -196,11 +196,11 @@ void touch_update_leds(void) {
         }
     }
 
-    // control LED0 on CNANO board (PA14, active low) for any sensor touch
+    // control LED0 on CNANO board (PB02, active low) for any sensor touch
     if ((buttonMask > 0) || (scrollerMask > 0)) {
-        PORT_PinClear(PORT_PIN_PA14);
+        GPIO_LED0_Clear(); // LED on
     } else {
-        PORT_PinSet(PORT_PIN_PA14);
+        GPIO_LED0_Set(); // LED off
     }
 }
 

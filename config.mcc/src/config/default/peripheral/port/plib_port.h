@@ -65,6 +65,24 @@
 // *****************************************************************************
 // *****************************************************************************
 
+/*** Macros for GPIO_LED0 pin ***/
+#define GPIO_LED0_Set()               (PORT_REGS->GROUP[1].PORT_OUTSET = ((uint32_t)1U << 2U))
+#define GPIO_LED0_Clear()             (PORT_REGS->GROUP[1].PORT_OUTCLR = ((uint32_t)1U << 2U))
+#define GPIO_LED0_Toggle()            (PORT_REGS->GROUP[1].PORT_OUTTGL = ((uint32_t)1U << 2U))
+#define GPIO_LED0_OutputEnable()      (PORT_REGS->GROUP[1].PORT_DIRSET = ((uint32_t)1U << 2U))
+#define GPIO_LED0_InputEnable()       (PORT_REGS->GROUP[1].PORT_DIRCLR = ((uint32_t)1U << 2U))
+#define GPIO_LED0_Get()               (((PORT_REGS->GROUP[1].PORT_IN >> 2U)) & 0x01U)
+#define GPIO_LED0_PIN                  PORT_PIN_PB02
+
+/*** Macros for GPIO_SW0 pin ***/
+#define GPIO_SW0_Set()               (PORT_REGS->GROUP[1].PORT_OUTSET = ((uint32_t)1U << 3U))
+#define GPIO_SW0_Clear()             (PORT_REGS->GROUP[1].PORT_OUTCLR = ((uint32_t)1U << 3U))
+#define GPIO_SW0_Toggle()            (PORT_REGS->GROUP[1].PORT_OUTTGL = ((uint32_t)1U << 3U))
+#define GPIO_SW0_OutputEnable()      (PORT_REGS->GROUP[1].PORT_DIRSET = ((uint32_t)1U << 3U))
+#define GPIO_SW0_InputEnable()       (PORT_REGS->GROUP[1].PORT_DIRCLR = ((uint32_t)1U << 3U))
+#define GPIO_SW0_Get()               (((PORT_REGS->GROUP[1].PORT_IN >> 3U)) & 0x01U)
+#define GPIO_SW0_PIN                  PORT_PIN_PB03
+
 // *****************************************************************************
 /* PORT Group
 

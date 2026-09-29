@@ -60,9 +60,9 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\default\peripheral\pm\plib_pm.h
   hash: 2c710197399980bce12b1e61ef1e2f88a3f9fa94f6bd5d1544b93f657c8a08b2
 - file: ..\src\config\default\peripheral\port\plib_port.c
-  hash: fa1286f39fba82e1cfdea93fac7aaf24a0b6e3e1f41bfaeebd70da7024f6be7b
+  hash: 39e2b58ed733f98e72d6992ad1d4100d4894df6bacbacd7f3c8e960ac658fc33
 - file: ..\src\config\default\peripheral\port\plib_port.h
-  hash: 447b3e4e27d4cfd17bbf4d3363ce3e78a38856d4ca44944f58aede2ceff6e489
+  hash: fe321d32767b5e5798934498074b40b8f5a5f996023567504fefc40ff39750a6
 - file: ..\src\config\default\peripheral\rtc\plib_rtc.h
   hash: 92e9a13ceda691e011ad7efff84d616e8466f744723f8135850fc171fd53ac3b
 - file: ..\src\config\default\peripheral\rtc\plib_rtc_timer.c
@@ -80,7 +80,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\default\peripheral\sercom\usart\plib_sercom_usart_common.h
   hash: 8ce7e93172c9cde3c5940869cb66ab1646c706a4ea1605209085ea58382e8b1e
 - file: ..\src\config\default\pin_configurations.csv
-  hash: 11d7bbae1b51e73c3badcce024b9e8f8899987eb118aa2650c88ea5e134fd68a
+  hash: ff05e01cc7603b398b8edb2330bef1cccc5638df56a9da757a6d6b7199f9210e
 - file: ..\src\config\default\startup_xc32.c
   hash: 3aa1360f333b564211c35f641c7327c2111e11aa633bd02ec5a0be9466b1df04
 - file: ..\src\config\default\stdio\xc32_monitor.c
