@@ -1,0 +1,76 @@
+# .gitignore created for MPLAB X projects
+# created by: Andy Appeldorn
+
+# NetBeans directories
+html/
+nbbuild/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+funclist
+
+# MPLAB X directories - not needed for portability
+nbproject/
+**/nbproject/private/
+**/.generated_files/
+**/nbproject/Makefile-*
+**/nbproject/Package-default.bash
+
+# MPLAB X Build Directories
+[Dd]ebug/
+[Bb]uild/
+[Dd]ist/
+[Dd]isassembly/
+
+# Intermediate Build Files
+*.d
+*.pre
+*.p1
+*.lst
+*.sym
+*.obj
+*.o
+*.sdb
+*.obj.dmp
+*.map
+
+# MCC System and Backup Files
+*.c.bak
+*.h.bak
+*.bak*
+*.mc3.bak*
+*.backup
+defmplabxtrace.log*
+**/queuelogs/
+
+#vs code
+.vscode/*.mplab-local.json
+.vscode/launch.json
+.vscode/settings.json
+*.mplab-local.json
+settings.json
+cmake/
+_build/
+out/
+.specstory/
+.cursorindexingignore
+*.log
+
+#python
+venv/
+build/
+dist/
+**/__pycache__/
+
+# Secure/Private directory - not tracked in version control
+[Ss]ecure/
+[Pp]rivate/
+
+// auto appended
+.generated_files/
+Makefile*
+Package-*
+private/
+!cmake/**/user.cmake
+cmake/**/.generated/*
+cmake/**/CMake*
