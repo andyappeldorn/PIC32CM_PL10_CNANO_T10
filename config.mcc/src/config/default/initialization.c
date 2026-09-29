@@ -155,6 +155,8 @@ void SYS_Initialize ( void* data )
 
     EVSYS_Initialize();
 
+    SERCOM0_I2C_Initialize();
+
 
     ADC0_Initialize();
     RTC_Initialize();

@@ -36,8 +36,8 @@ Pin Number,Pin ID,Custom Name,Function,Mode, Direction,Latch,Pull Up,Pull Down,S
 39,PA29,,PTC_PAD29,Digital,High Impedance,n/a,No,No,DISABLED
 40,PA30,,Available,,,,,,DISABLED
 41,PA31,,Available,,,,,,DISABLED
-44,PA00,,Available,,,,,,DISABLED
-45,PA01,,Available,,,,,,DISABLED
+44,PA00,,SERCOM0_PAD0,Digital,High Impedance,n/a,No,No,DISABLED
+45,PA01,,SERCOM0_PAD1,Digital,High Impedance,n/a,No,No,DISABLED
 46,PA02,,Available,,,,,,DISABLED
 47,PA03,,Available,,,,,,DISABLED
 48,PA04,,PTC_PAD4,Digital,High Impedance,n/a,No,No,DISABLED

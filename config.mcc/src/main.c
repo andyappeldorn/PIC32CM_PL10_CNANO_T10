@@ -28,6 +28,7 @@
 #include "definitions.h"                // SYS function prototypes
 
 #include "touch/touch_example.h"
+#include "led_driver.h"
 
 
 // *****************************************************************************
@@ -40,13 +41,24 @@ int main ( void )
 {
     /* Initialize all modules */
     SYS_Initialize ( NULL );
+    init_led_driver();
 
     while ( true )
     {
         /* Maintain state machines of all polled MPLAB Harmony modules. */
         SYS_Tasks ( );
 
-        touch_mainloop_example();
+        //touch_mainloop_example();
+
+        /* call touch process function */
+        touch_process();
+
+        if(measurement_done_touch == 1u)
+        {
+            measurement_done_touch = 0u;
+            touch_update_leds();
+        }
+
     }
 
     /* Execution should not come here during normal operation */

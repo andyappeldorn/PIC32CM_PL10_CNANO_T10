@@ -80,7 +80,8 @@
                 "config.mcc/src/config/default/touch/touchTune.c",
                 "config.mcc/src/config/default/touch/touch.c",
                 "config.mcc/src/config/default/touch/touch_example.c",
-                "config.mcc/src/config/default/peripheral/rtc/plib_rtc_timer.c"
+                "config.mcc/src/config/default/peripheral/rtc/plib_rtc_timer.c",
+                "config.mcc/src/config/default/peripheral/sercom/i2c_master/plib_sercom0_i2c_master.c"
             ]
         }
     ]
