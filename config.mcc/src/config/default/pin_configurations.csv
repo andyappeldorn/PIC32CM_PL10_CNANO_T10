@@ -2,8 +2,8 @@ Pin Number,Pin ID,Custom Name,Function,Mode, Direction,Latch,Pull Up,Pull Down,S
 1,PA05,,Available,,,,,,DISABLED
 2,PA06,,Available,,,,,,DISABLED
 3,PA07,,Available,,,,,,DISABLED
-4,PB00,,Available,,,,,,DISABLED
-5,PB01,,Available,,,,,,DISABLED
+4,PB00,,SERCOM1_PAD0,Digital,High Impedance,n/a,No,No,DISABLED
+5,PB01,,SERCOM1_PAD1,Digital,High Impedance,n/a,No,No,DISABLED
 6,PB02,,Available,,,,,,DISABLED
 7,PB03,,Available,,,,,,DISABLED
 8,PB04,,Available,,,,,,DISABLED
@@ -26,18 +26,18 @@ Pin Number,Pin ID,Custom Name,Function,Mode, Direction,Latch,Pull Up,Pull Down,S
 27,PA23,,Available,,,,,,DISABLED
 30,PB08,,Available,,,,,,DISABLED
 31,PB09,,Available,,,,,,DISABLED
-32,PB10,,Available,,,,,,DISABLED
-33,PB11,,Available,,,,,,DISABLED
+32,PB10,,PTC_PAD42,Digital,High Impedance,n/a,No,No,DISABLED
+33,PB11,,PTC_PAD43,Digital,High Impedance,n/a,No,No,DISABLED
 34,PA24,,Available,,,,,,DISABLED
 35,PA25,,Available,,,,,,DISABLED
 36,PA26,,Available,,,,,,DISABLED
 37,PA27,,Available,,,,,,DISABLED
 38,PA28,,Available,,,,,,DISABLED
-39,PA29,,Available,,,,,,DISABLED
+39,PA29,,PTC_PAD29,Digital,High Impedance,n/a,No,No,DISABLED
 40,PA30,,Available,,,,,,DISABLED
 41,PA31,,Available,,,,,,DISABLED
 44,PA00,,Available,,,,,,DISABLED
 45,PA01,,Available,,,,,,DISABLED
 46,PA02,,Available,,,,,,DISABLED
 47,PA03,,Available,,,,,,DISABLED
-48,PA04,,Available,,,,,,DISABLED
+48,PA04,,PTC_PAD4,Digital,High Impedance,n/a,No,No,DISABLED

@@ -1,0 +1,35 @@
+configVersion: 1.0.0
+componentName: pm
+coreVersion: 5.9.1
+device: PIC32CM6408PL10048
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: pm
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.26.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition: {}
+  symbols:
+    PM_INSTANCE_NAME:
+      attributes:
+        id: PM_INSTANCE_NAME
+        label: PM_INSTANCE_NAME
+      type: String
+    PM_WPCTRL__WPEN:
+      attributes:
+        id: PM_WPCTRL__WPEN
+        label: Enable WriteProtect
+      type: Boolean
+    PM_WPCTRL__WPLCK:
+      attributes:
+        id: PM_WPCTRL__WPLCK
+        label: Enable WriteProtect LOCK
+      type: Boolean
+  userData: {}

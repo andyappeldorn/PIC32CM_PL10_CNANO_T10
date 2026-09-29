@@ -1,0 +1,538 @@
+configVersion: 1.0.0
+componentName: adc0
+coreVersion: 5.9.1
+device: PIC32CM6408PL10048
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: adc0
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.26.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments:
+    children:
+    - children:
+      - attributes:
+          id: ADC0_ADC
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: ptc
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: lib_acquire
+            type: String
+          type: Attributes
+        type: DirectCapability
+      type: Attachments
+    type: adc0
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: adc0
+          x: '32'
+          y: '304'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    ADC_COMMAND_CTRLCONV:
+      attributes:
+        id: ADC_COMMAND_CTRLCONV
+        label: Select Conversion Start Type
+      type: KeyValueSet
+    ADC_COMMAND_DIFFMODE:
+      attributes:
+        id: ADC_COMMAND_DIFFMODE
+        label: Enable Differential Mode
+      type: Boolean
+    ADC_COMMAND_OPMODE:
+      attributes:
+        id: ADC_COMMAND_OPMODE
+        label: Select Operation Mode
+      type: KeyValueSet
+    ADC_CONV_TRIGGER:
+      attributes:
+        id: ADC_CONV_TRIGGER
+        label: Select Conversion Trigger
+      type: Combo
+    ADC_CTRLA_ONDEMAND:
+      attributes:
+        id: ADC_CTRLA_ONDEMAND
+        label: On Demand Control
+      type: Boolean
+    ADC_CTRLA_RUNSTDBY:
+      attributes:
+        id: ADC_CTRLA_RUNSTDBY
+        label: Run During Standby
+      type: Boolean
+    ADC_CTRLB_PRESCALER:
+      attributes:
+        id: ADC_CTRLB_PRESCALER
+        label: Select Prescaler
+      type: KeyValueSet
+    ADC_CTRLB_TIMEBASE:
+      attributes:
+        id: ADC_CTRLB_TIMEBASE
+        label: Select Timebase Time (in microseconds)
+      type: Integer
+    ADC_CTRLC_REFSEL:
+      attributes:
+        id: ADC_CTRLC_REFSEL
+        label: Select Reference
+      type: KeyValueSet
+    ADC_CTRLD_CHOPPING:
+      attributes:
+        id: ADC_CTRLD_CHOPPING
+        label: Enable Chopping
+      type: Boolean
+    ADC_CTRLD_FILTER:
+      attributes:
+        id: ADC_CTRLD_FILTER
+        label: Enable Filter
+      type: Boolean
+    ADC_CTRLD_RESOLUTION:
+      attributes:
+        id: ADC_CTRLD_RESOLUTION
+        label: Select Result Resolution
+      type: KeyValueSet
+    ADC_CTRLD_SAMPNUM:
+      attributes:
+        id: ADC_CTRLD_SAMPNUM
+        label: Number of Accumulated Samples
+      type: KeyValueSet
+    ADC_CTRLD_SCALING:
+      attributes:
+        id: ADC_CTRLD_SCALING
+        label: Select Result Scaling
+      type: KeyValueSet
+    ADC_CTRLD_VPD:
+      attributes:
+        id: ADC_CTRLD_VPD
+        label: Disable Voltage Pump
+      type: Boolean
+    ADC_CTRLE_SAMPLEN:
+      attributes:
+        id: ADC_CTRLE_SAMPLEN
+        label: Select Sample Length (cycles)
+      type: Integer
+    ADC_EVCTRL_RESRDYEO:
+      attributes:
+        id: ADC_EVCTRL_RESRDYEO
+        label: Enable Result Ready Event Out
+      type: Boolean
+    ADC_EVCTRL_SAMPRDYEO:
+      attributes:
+        id: ADC_EVCTRL_SAMPRDYEO
+        label: Enable Sample Ready Event Out
+      type: Boolean
+    ADC_EVCTRL_START:
+      attributes:
+        id: ADC_EVCTRL_START
+        label: Start Event Input
+      type: KeyValueSet
+    ADC_INPUTCTRL_MUXNEG:
+      attributes:
+        id: ADC_INPUTCTRL_MUXNEG
+        label: Select Negative Input
+      type: KeyValueSet
+    ADC_INPUTCTRL_MUXPOS:
+      attributes:
+        id: ADC_INPUTCTRL_MUXPOS
+        label: Select Positive Input
+      type: KeyValueSet
+    ADC_INSTANCE_NAME:
+      attributes:
+        id: ADC_INSTANCE_NAME
+        label: ADC_INSTANCE_NAME
+      type: String
+    ADC_INTENSET_RESOVR:
+      attributes:
+        id: ADC_INTENSET_RESOVR
+        label: Enable Result Overwrite Interrupt
+      type: Boolean
+    ADC_INTENSET_RESRDY:
+      attributes:
+        id: ADC_INTENSET_RESRDY
+        label: Enable Result Ready Interrupt
+      type: Boolean
+    ADC_INTENSET_SAMPOVR:
+      attributes:
+        id: ADC_INTENSET_SAMPOVR
+        label: Enable Sample Overwrite Interrupt
+      type: Boolean
+    ADC_INTENSET_SAMPRDY:
+      attributes:
+        id: ADC_INTENSET_SAMPRDY
+        label: Enable Sample Ready Interrupt
+      type: Boolean
+    ADC_INTENSET_WCMP:
+      attributes:
+        id: ADC_INTENSET_WCMP
+        label: Enable Window Comparator Interrupt
+      type: Boolean
+    ADC_MAX_CHANNELS:
+      attributes:
+        id: ADC_MAX_CHANNELS
+        label: ADC_MAX_CHANNELS
+      type: Integer
+    ADC_MUXNEG_ENUM0:
+      attributes:
+        id: ADC_MUXNEG_ENUM0
+        label: ADC_MUXNEG_ENUM0
+      type: String
+    ADC_MUXNEG_ENUM1:
+      attributes:
+        id: ADC_MUXNEG_ENUM1
+        label: ADC_MUXNEG_ENUM1
+      type: String
+    ADC_MUXNEG_ENUM10:
+      attributes:
+        id: ADC_MUXNEG_ENUM10
+        label: ADC_MUXNEG_ENUM10
+      type: String
+    ADC_MUXNEG_ENUM11:
+      attributes:
+        id: ADC_MUXNEG_ENUM11
+        label: ADC_MUXNEG_ENUM11
+      type: String
+    ADC_MUXNEG_ENUM12:
+      attributes:
+        id: ADC_MUXNEG_ENUM12
+        label: ADC_MUXNEG_ENUM12
+      type: String
+    ADC_MUXNEG_ENUM13:
+      attributes:
+        id: ADC_MUXNEG_ENUM13
+        label: ADC_MUXNEG_ENUM13
+      type: String
+    ADC_MUXNEG_ENUM14:
+      attributes:
+        id: ADC_MUXNEG_ENUM14
+        label: ADC_MUXNEG_ENUM14
+      type: String
+    ADC_MUXNEG_ENUM15:
+      attributes:
+        id: ADC_MUXNEG_ENUM15
+        label: ADC_MUXNEG_ENUM15
+      type: String
+    ADC_MUXNEG_ENUM16:
+      attributes:
+        id: ADC_MUXNEG_ENUM16
+        label: ADC_MUXNEG_ENUM16
+      type: String
+    ADC_MUXNEG_ENUM17:
+      attributes:
+        id: ADC_MUXNEG_ENUM17
+        label: ADC_MUXNEG_ENUM17
+      type: String
+    ADC_MUXNEG_ENUM18:
+      attributes:
+        id: ADC_MUXNEG_ENUM18
+        label: ADC_MUXNEG_ENUM18
+      type: String
+    ADC_MUXNEG_ENUM19:
+      attributes:
+        id: ADC_MUXNEG_ENUM19
+        label: ADC_MUXNEG_ENUM19
+      type: String
+    ADC_MUXNEG_ENUM2:
+      attributes:
+        id: ADC_MUXNEG_ENUM2
+        label: ADC_MUXNEG_ENUM2
+      type: String
+    ADC_MUXNEG_ENUM20:
+      attributes:
+        id: ADC_MUXNEG_ENUM20
+        label: ADC_MUXNEG_ENUM20
+      type: String
+    ADC_MUXNEG_ENUM21:
+      attributes:
+        id: ADC_MUXNEG_ENUM21
+        label: ADC_MUXNEG_ENUM21
+      type: String
+    ADC_MUXNEG_ENUM22:
+      attributes:
+        id: ADC_MUXNEG_ENUM22
+        label: ADC_MUXNEG_ENUM22
+      type: String
+    ADC_MUXNEG_ENUM23:
+      attributes:
+        id: ADC_MUXNEG_ENUM23
+        label: ADC_MUXNEG_ENUM23
+      type: String
+    ADC_MUXNEG_ENUM24:
+      attributes:
+        id: ADC_MUXNEG_ENUM24
+        label: ADC_MUXNEG_ENUM24
+      type: String
+    ADC_MUXNEG_ENUM25:
+      attributes:
+        id: ADC_MUXNEG_ENUM25
+        label: ADC_MUXNEG_ENUM25
+      type: String
+    ADC_MUXNEG_ENUM26:
+      attributes:
+        id: ADC_MUXNEG_ENUM26
+        label: ADC_MUXNEG_ENUM26
+      type: String
+    ADC_MUXNEG_ENUM3:
+      attributes:
+        id: ADC_MUXNEG_ENUM3
+        label: ADC_MUXNEG_ENUM3
+      type: String
+    ADC_MUXNEG_ENUM4:
+      attributes:
+        id: ADC_MUXNEG_ENUM4
+        label: ADC_MUXNEG_ENUM4
+      type: String
+    ADC_MUXNEG_ENUM5:
+      attributes:
+        id: ADC_MUXNEG_ENUM5
+        label: ADC_MUXNEG_ENUM5
+      type: String
+    ADC_MUXNEG_ENUM6:
+      attributes:
+        id: ADC_MUXNEG_ENUM6
+        label: ADC_MUXNEG_ENUM6
+      type: String
+    ADC_MUXNEG_ENUM7:
+      attributes:
+        id: ADC_MUXNEG_ENUM7
+        label: ADC_MUXNEG_ENUM7
+      type: String
+    ADC_MUXNEG_ENUM8:
+      attributes:
+        id: ADC_MUXNEG_ENUM8
+        label: ADC_MUXNEG_ENUM8
+      type: String
+    ADC_MUXNEG_ENUM9:
+      attributes:
+        id: ADC_MUXNEG_ENUM9
+        label: ADC_MUXNEG_ENUM9
+      type: String
+    ADC_MUXPOS_ENUM0:
+      attributes:
+        id: ADC_MUXPOS_ENUM0
+        label: ADC_MUXPOS_ENUM0
+      type: String
+    ADC_MUXPOS_ENUM1:
+      attributes:
+        id: ADC_MUXPOS_ENUM1
+        label: ADC_MUXPOS_ENUM1
+      type: String
+    ADC_MUXPOS_ENUM10:
+      attributes:
+        id: ADC_MUXPOS_ENUM10
+        label: ADC_MUXPOS_ENUM10
+      type: String
+    ADC_MUXPOS_ENUM11:
+      attributes:
+        id: ADC_MUXPOS_ENUM11
+        label: ADC_MUXPOS_ENUM11
+      type: String
+    ADC_MUXPOS_ENUM12:
+      attributes:
+        id: ADC_MUXPOS_ENUM12
+        label: ADC_MUXPOS_ENUM12
+      type: String
+    ADC_MUXPOS_ENUM13:
+      attributes:
+        id: ADC_MUXPOS_ENUM13
+        label: ADC_MUXPOS_ENUM13
+      type: String
+    ADC_MUXPOS_ENUM14:
+      attributes:
+        id: ADC_MUXPOS_ENUM14
+        label: ADC_MUXPOS_ENUM14
+      type: String
+    ADC_MUXPOS_ENUM15:
+      attributes:
+        id: ADC_MUXPOS_ENUM15
+        label: ADC_MUXPOS_ENUM15
+      type: String
+    ADC_MUXPOS_ENUM16:
+      attributes:
+        id: ADC_MUXPOS_ENUM16
+        label: ADC_MUXPOS_ENUM16
+      type: String
+    ADC_MUXPOS_ENUM17:
+      attributes:
+        id: ADC_MUXPOS_ENUM17
+        label: ADC_MUXPOS_ENUM17
+      type: String
+    ADC_MUXPOS_ENUM18:
+      attributes:
+        id: ADC_MUXPOS_ENUM18
+        label: ADC_MUXPOS_ENUM18
+      type: String
+    ADC_MUXPOS_ENUM19:
+      attributes:
+        id: ADC_MUXPOS_ENUM19
+        label: ADC_MUXPOS_ENUM19
+      type: String
+    ADC_MUXPOS_ENUM2:
+      attributes:
+        id: ADC_MUXPOS_ENUM2
+        label: ADC_MUXPOS_ENUM2
+      type: String
+    ADC_MUXPOS_ENUM20:
+      attributes:
+        id: ADC_MUXPOS_ENUM20
+        label: ADC_MUXPOS_ENUM20
+      type: String
+    ADC_MUXPOS_ENUM21:
+      attributes:
+        id: ADC_MUXPOS_ENUM21
+        label: ADC_MUXPOS_ENUM21
+      type: String
+    ADC_MUXPOS_ENUM22:
+      attributes:
+        id: ADC_MUXPOS_ENUM22
+        label: ADC_MUXPOS_ENUM22
+      type: String
+    ADC_MUXPOS_ENUM23:
+      attributes:
+        id: ADC_MUXPOS_ENUM23
+        label: ADC_MUXPOS_ENUM23
+      type: String
+    ADC_MUXPOS_ENUM24:
+      attributes:
+        id: ADC_MUXPOS_ENUM24
+        label: ADC_MUXPOS_ENUM24
+      type: String
+    ADC_MUXPOS_ENUM25:
+      attributes:
+        id: ADC_MUXPOS_ENUM25
+        label: ADC_MUXPOS_ENUM25
+      type: String
+    ADC_MUXPOS_ENUM26:
+      attributes:
+        id: ADC_MUXPOS_ENUM26
+        label: ADC_MUXPOS_ENUM26
+      type: String
+    ADC_MUXPOS_ENUM27:
+      attributes:
+        id: ADC_MUXPOS_ENUM27
+        label: ADC_MUXPOS_ENUM27
+      type: String
+    ADC_MUXPOS_ENUM28:
+      attributes:
+        id: ADC_MUXPOS_ENUM28
+        label: ADC_MUXPOS_ENUM28
+      type: String
+    ADC_MUXPOS_ENUM29:
+      attributes:
+        id: ADC_MUXPOS_ENUM29
+        label: ADC_MUXPOS_ENUM29
+      type: String
+    ADC_MUXPOS_ENUM3:
+      attributes:
+        id: ADC_MUXPOS_ENUM3
+        label: ADC_MUXPOS_ENUM3
+      type: String
+    ADC_MUXPOS_ENUM30:
+      attributes:
+        id: ADC_MUXPOS_ENUM30
+        label: ADC_MUXPOS_ENUM30
+      type: String
+    ADC_MUXPOS_ENUM31:
+      attributes:
+        id: ADC_MUXPOS_ENUM31
+        label: ADC_MUXPOS_ENUM31
+      type: String
+    ADC_MUXPOS_ENUM32:
+      attributes:
+        id: ADC_MUXPOS_ENUM32
+        label: ADC_MUXPOS_ENUM32
+      type: String
+    ADC_MUXPOS_ENUM33:
+      attributes:
+        id: ADC_MUXPOS_ENUM33
+        label: ADC_MUXPOS_ENUM33
+      type: String
+    ADC_MUXPOS_ENUM4:
+      attributes:
+        id: ADC_MUXPOS_ENUM4
+        label: ADC_MUXPOS_ENUM4
+      type: String
+    ADC_MUXPOS_ENUM5:
+      attributes:
+        id: ADC_MUXPOS_ENUM5
+        label: ADC_MUXPOS_ENUM5
+      type: String
+    ADC_MUXPOS_ENUM6:
+      attributes:
+        id: ADC_MUXPOS_ENUM6
+        label: ADC_MUXPOS_ENUM6
+      type: String
+    ADC_MUXPOS_ENUM7:
+      attributes:
+        id: ADC_MUXPOS_ENUM7
+        label: ADC_MUXPOS_ENUM7
+      type: String
+    ADC_MUXPOS_ENUM8:
+      attributes:
+        id: ADC_MUXPOS_ENUM8
+        label: ADC_MUXPOS_ENUM8
+      type: String
+    ADC_MUXPOS_ENUM9:
+      attributes:
+        id: ADC_MUXPOS_ENUM9
+        label: ADC_MUXPOS_ENUM9
+      type: String
+    ADC_NUM_CHANNELS:
+      attributes:
+        id: ADC_NUM_CHANNELS
+        label: ADC_NUM_CHANNELS
+      type: Integer
+    ADC_NUM_MODULES:
+      attributes:
+        id: ADC_NUM_MODULES
+        label: ADC_NUM_MODULES
+      type: Integer
+    ADC_TIMEBASE_VALUE:
+      attributes:
+        id: ADC_TIMEBASE_VALUE
+        label: ADC_TIMEBASE_VALUE
+      type: Float
+    ADC_WINCTRL_WINMODE:
+      attributes:
+        id: ADC_WINCTRL_WINMODE
+        label: Select Window Monitor Mode
+      type: KeyValueSet
+    ADC_WINCTRL_WINSRC:
+      attributes:
+        id: ADC_WINCTRL_WINSRC
+        label: Select Window Monitor Source
+      type: KeyValueSet
+    ADC_WINDOW_OUTPUT_EVENT:
+      attributes:
+        id: ADC_WINDOW_OUTPUT_EVENT
+        label: Enable Window Monitor Event Out
+      type: Boolean
+    ADC_WINHT:
+      attributes:
+        id: ADC_WINHT
+        label: Window Upper Threshold
+      type: Integer
+    ADC_WINLT:
+      attributes:
+        id: ADC_WINLT
+        label: Window Lower Threshold
+      type: Integer
+  userData: {}

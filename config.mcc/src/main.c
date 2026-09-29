@@ -27,6 +27,8 @@
 #include <stdlib.h>                     // Defines EXIT_FAILURE
 #include "definitions.h"                // SYS function prototypes
 
+#include "touch/touch_example.h"
+
 
 // *****************************************************************************
 // *****************************************************************************
@@ -43,6 +45,8 @@ int main ( void )
     {
         /* Maintain state machines of all polled MPLAB Harmony modules. */
         SYS_Tasks ( );
+
+        touch_mainloop_example();
     }
 
     /* Execution should not come here during normal operation */

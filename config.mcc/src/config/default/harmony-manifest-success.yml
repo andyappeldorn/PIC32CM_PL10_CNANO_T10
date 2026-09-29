@@ -4,7 +4,7 @@
 
 
 project: config
-creation_date: 2026-09-29T10:06:38.071-05:00[America/Chicago]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2026-09-29T10:35:51.900-05:00[America/Chicago]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 11
 mcc_mode: VSCodePlugin            # [IDE|Standalone|Headless]
 mcc_version: v5.7.1
@@ -16,6 +16,7 @@ compiler: NA
 modules:
     - {name: "CMSIS_6", version: "v6.3.0"}
     - {name: "csp", version: "v3.26.0"}
+    - {name: "touch", version: "v3.20.2"}
 
 packs:
     - {name: "PIC32CM-PL_DFP", version: "1.4.418"}
